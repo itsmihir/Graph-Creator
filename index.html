@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     <title>Mygraph</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">
+         <img src="images/i2.png" alt="Logo" style="width:60px;">
+       </a>
+    
+    
+        <div class="input">
+        <input type="file" id="input" class="btn btn-secondary" >
+        </div>
+        
+        <div class="icon">
+        <button type="button" id="add" class="btn btn-primary" onclick="get('bar')">bar</button>
+        <button type="button" id="add" class="btn btn-success" onclick="get('line')">line</button>
+
+        <button type="button" id="add" class="btn btn-info" onclick="get('radar')">radar</button>
+
+        <button type="button" id="add" class="btn btn-danger" onclick="get('pie')">Doughnut and Pie</button>
+        <button type="button" id="add" class="btn btn-warning" onclick="get('polarArea')">Polar Area</button>
+        
+        <button type="button"  class="btn btn-outline-primary" onclick="about()" >
+             about</button>
+            
+           
+    </div>
+</nav>
+    <div class="chart">
+    <canvas id="myChart" style="width: 10px; height:3px"></canvas>
+    </div>
+    <p id="about"></p>
+    <script src="line.js"></script>
+
+</body>
+</html>

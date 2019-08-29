@@ -1,0 +1,30 @@
+body
+{
+    height:100vh;
+   
+}
+.input
+{
+    margin: 2%;
+}
+.icon
+{
+    margin: 2%;
+}
+.chart
+{
+    margin : 3%;
+}
+#ss 
+{
+    width: 70%;
+    margin-left: 200px;
+}
+#content
+{
+    margin-left: 20px;
+}
+canvas
+{
+    border: 2px solid rgb(41, 12, 12);
+}

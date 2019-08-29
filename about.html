@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     <title>Mygraph</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">
+         <img src="images/i2.png" alt="Logo" style="width:60px;">
+       </a>
+       <div class="input">
+            <input type="file" id="input" class="btn btn-secondary" >
+            </div>
+            
+    
+        <div class="icon">
+                <button type="button" id="add" class="btn btn-primary" onclick="gotohome('bar')">bar</button>
+                <button type="button" id="add" class="btn btn-success" onclick="gotohome('line')">line</button>
+        
+                <button type="button" id="add" class="btn btn-info" onclick="gotohome('radar')">radar</button>
+        
+                <button type="button" id="add" class="btn btn-danger" onclick="gotohome('pie')">Doughnut and Pie</button>
+                <button type="button" id="add" class="btn btn-warning" onclick="gotohome('polarArea')">Polar Area</button>
+                
+                <button type="button"  class="btn btn-outline-primary" onclick="about()" >
+                     about</button>
+                    
+           
+    </div>
+</nav>
+<div id="content">
+    <br>
+    <p id="about">
+    <h4>Upload a .csv</h4> 
+    </p>
+    <p>
+        Sample .csv file
+    </p>
+</div>
+    <div >
+        <img id="ss" src="images/ss.png" alt="screenshot" >
+    </div>
+    <p>
+        <br><br>
+    </p>
+    <script src="line.js"></script>
+
+</body>
+</html>
