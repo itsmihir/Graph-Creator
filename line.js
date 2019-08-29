@@ -9,13 +9,8 @@ const yaxis=[];
 
 function chart(graph)
 {
-    for(let i=0;i<xaxis.length;i++)
-    {
-        console.log(xaxis[i],yaxis[i]);
-        
-    }
 
-    console.log('connected2');
+   
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: graph,
@@ -50,8 +45,7 @@ const input =document.querySelector('input[type="file"]')
 input.addEventListener('change',()=>
 {
     const graph='line'
-    console.log(input.files);
-    console.log(graph);
+   
     const reader = new FileReader();
     reader.onload=function()
     {
@@ -59,17 +53,17 @@ input.addEventListener('change',()=>
         {
             return line.split(',');
         })
-        console.log(lines);
+      
         for(let i=0;i<lines.length;i++)
         {
             xaxis.push(lines[i][0]);
-           console.log(lines[i][0])
+         
         }
 
         for(let i=0;i<lines.length;i++)
         {
             yaxis.push(lines[i][1]);
-           console.log(lines[i][1])
+          
         }
        
        
